@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,
+              700&family=Yanone+Kaffeesatz:wght@200;400;600;700&display=swap" 
+              rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="flex-navbar.css">
+  <link rel="stylesheet" href="logo.css">
+  <link rel="stylesheet" href="nav-menu.css">
+  <link rel="stylesheet" href="sub-menu-1.css">
+  <link rel="stylesheet" href="toggle-button.css">
+  <link rel="stylesheet" href="imageview.css">
+  <title>Flex navbar</title>
+</head>
+<body>
+  <!-- &&&&&&&&&&&&&&&&&&&&&&&&  outside nav-bar container &&&&&&&&&&&&&&&&&&&&& -->
+  <div id="nav-container">
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&  logo start &&&&&&&&&&&&&&&&&&&&& -->
+    <div class="nav-logo">
+      <a href="https://insta-policy.com/">INSTA<em>-Fin</em></a>
+      <!-- %%%%%%%%%%%%%%%%%%%%%%%%%% toggle button start %%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  
+      <!-- <label for="navbar-toggle" class="icon-burger"> -->
+        <button id="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+      <!-- %%%%%%%%%%%%%%%%%%%%%%%%%% toggle button start %%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    </div>
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&  logo end &&&&&&&&&&&&&&&&&&&&& -->
+
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&  left side menu bar start &&&&&&&&&&&&&&&&&&&&& -->
+    <div class="nav-menu-container">
+      <ul>
+        <li class="menu-link" onclick="openSubMenu1()"><a class="link-of-menu" href="#">PRODUCTS <i class="fa fa-arrow-circle-down"></i></a>
+          <div class="sub-menu-1" id="product">
+            <ul>
+              <li class="click-me"><a href="#">PRODUCT 1 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 2 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 6 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 1 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 2 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 6 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 1 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 2 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 6 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 1 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 2 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 6 <i class="fa fa-arrow-circle-right"></i></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-link" onclick="openSubMenu2()"><a class="link-of-menu" href="#">EMI NETWORKS <i class="fa fa-arrow-circle-down"></i></a>
+          <div class="sub-menu-1" id="emi-network-1">
+            <ul>
+              <li class="click-me"><a href="#">EMI NETWORK 1 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 2 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 6 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 1 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 2 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 6 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 1 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 2 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 6 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 1 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 2 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">EMI NETWORK 6 <i class="fa fa-arrow-circle-right"></i></a></li>
+            </ul>
+          </div>
+        
+        </li>
+        <li class="menu-link"><a class="link-of-menu" href="#">ONLINE STORES <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">COMPANIES <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">MORE <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">ENGLISH <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">MY ACCOUNT <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">CONTACT US <i class="fa fa-arrow-circle-down"></i></a></li>
+        </ul>
+    </div>
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&  left side menu bar end &&&&&&&&&&&&&&&&&&&&& -->
+    
+  </div>
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&  outside nav-bar container &&&&&&&&&&&&&&&&&&&&& -->
+
+
+
+  <!-- &&&&&&&&&&&&&&&&&&&&&&&&  after navbar image start &&&&&&&&&&&&&&&&&&&&& -->
+  <!-- <div id="image-container">
+    <div class="centered">
+      <ul>
+        <li><a href="#">LOANS</a></li>
+        <li><a href="#">CARDS</a></li>
+        <li><a href="#">FIXED DEPOSITE</a></li>
+        <li><a href="#">ONLINE DEMAT AND TRADING ACCOUNT</a></li>
+        <li><a href="#">MUTUAL FUNDS</a></li>
+        <li><a href="#">INSURANCE</a></li>
+        <li><a href="#">POCKET INSURANCE AND SUBCRIPTIONS</a></li>
+      </ul>
+    </div>
+  </div> -->
+  <!-- &&&&&&&&&&&&&&&&&&&&&&&&  after navbar image END &&&&&&&&&&&&&&&&&&&&& -->
+
+    <script src="menu.js"></script>
+</body>
+</html>

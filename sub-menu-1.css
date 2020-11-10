@@ -1,0 +1,64 @@
+div .sub-menu-1
+{
+    position: absolute;
+    top: 50px;
+    box-sizing: none;
+    left: 0;
+    /* width: 205px;       width: 0;  is to make it hidden */
+    width: 0;
+    height: 100vh;
+    background-color: rgb(240, 60, 60);
+    overflow: hidden;   
+}
+div .sub-menu-1:hover{
+    overflow: auto;
+}
+
+div .sub-menu-1 ul{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+div .sub-menu-1 ul .click-me{
+    width: 100%;
+    height: 50px;
+    padding: 15px 40px;
+    /* border-bottom: 1px solid white; */
+    /* padding-top: 10px ; */
+    /* box-sizing: border-box; */
+    /* margin: 0px ; */
+}
+
+div .sub-menu-1 ul .click-me:hover{
+    background-color: white;
+}
+
+div .sub-menu-1 ul .click-me:hover a{
+    color: red;
+}
+
+div .sub-menu-1 ul .click-me:last-child{
+    border-bottom: none;
+}
+div .sub-menu-1 ul .click-me a{
+    color: white;
+    /* padding: 5px 20px; */
+}
+.click-me .fa{
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 768px)
+{
+    div .sub-menu-1{
+        top: 0px;
+    }
+    div .sub-menu-1{
+    width: 0px;
+    border-right: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    }
+}
