@@ -1,0 +1,180 @@
+/* body
+{
+    background-color: lawngreen;
+}
+
+div #image-container
+{
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: lawngreen;
+    border: 5px solid red;
+    margin-top: 300px;
+} */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,
+              700&family=Yanone+Kaffeesatz:wght@200;400;600;700&display=swap" 
+              rel="stylesheet"> 
+              <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;1,
+              100;1,300;1,400;1,700&display=swap" rel="stylesheet">  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="flex-navbar.css">
+  <link rel="stylesheet" href="logo.css">
+  <link rel="stylesheet" href="nav-menu.css">
+  <link rel="stylesheet" href="sub-menu-1.css">
+  <link rel="stylesheet" href="sub-menu-2.css">
+  <link rel="stylesheet" href="toggle-button.css">
+  <link rel="stylesheet" href="imageview.css">
+  <title>Flex navbar</title>
+</head>
+<body>
+  <!-- &&&&&&&&&&&&&&&&&&&&&&&&  outsmenulink.forEach(function(menulink, indexofmenulink){
+    menulink.addEventListener("click", function(){
+        displaySubMenu1(indexofmenulink);
+    });
+});
+
+var displaySubMenu1 = function(indexofmenulink){
+    console.log("i am inside function");
+    for(var i=0; i < menulink.length; i++){
+    console.log("i am inside function");
+        
+        if(i === indexofmenulink){
+            console.log("inside display block");
+
+            submenu1[i].classList.toggle("active-menu-1");
+        }else{
+            submenu1[i].classList.remove("active-menu-1");
+        }
+    }
+}
+ide nav-bar container &&&&&&&&&&&&&&&&&&&&& -->
+  <div id="nav-container">
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&  logo start &&&&&&&&&&&&&&&&&&&&& -->
+    <div class="nav-logo">
+      <a href="https://insta-policy.com/">INSTA<em>-Fin</em></a>
+      <!-- %%%%%%%%%%%%%%%%%%%%%%%%%% toggle button start %%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  
+      <!-- <label for="navbar-toggle" class="icon-burger"> -->
+        <button id="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+      <!-- %%%%%%%%%%%%%%%%%%%%%%%%%% toggle button start %%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    </div>
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&& logo end &&&&&&&&&&&&&&&&&&&&& -->
+
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&& left side menu bar start &&&&&&&&&&&&&&&&&&& -->
+    <div class="nav-menu-container">
+      <ul>
+        <li class="menu-link"><a class="link-of-menu" href="#">PRODUCTS <i class="fa fa-arrow-circle-down"></i></a>
+        <!-- &&&&&&&&&&&&&&&&&&&&&&&&  sUB-MENU-1 START OF PRODUCT &&&&&&&&&&&&&&&&&&&&& --> 
+          <div class="sub-menu-1">
+            <ul>
+              <!-- &&&&&&&&&&&&&&&&&&&&&&&&  sUB-MENU-2 START OF PRODUCT LIST &&&&&&&&&&&&&&&&&&&&& -->
+              <li class="click-me"><a href="#">PRODUCT 1 <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2 ">
+                <!-- &&&&&&&&&&&&&&&  grid container  start &&&&&&&&&&&&&&&&&&&&&& -->
+                  <div class="grid-container">
+                    <!-- &&&&&&&&&&&&&&&  flex container 1 start &&&&&&&&&&&&&&&&&&&&&& -->
+                    <div class="grid-item">
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">Heading</a></h1>
+                          <li><a href="#">link 1 cdlkuj</a></li>
+                          <li><a id="special" href="#">Download</a></li>
+                          <li><a href="#">link 3</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                    </div>
+                    <!-- &&&&&&&&&&&&&&&  flex container 1 end &&&&&&&&&&&&&&&&&&&&&& -->
+                <!-- &&&&&&&&&&&&&&&  flex container 2 start &&&&&&&&&&&&&&&&&&&&&& -->
+                    <!-- <div class="grid-item"></div> -->
+                <!-- &&&&&&&&&&&&&&&  flex container 2 end &&&&&&&&&&&&&&&&&&&&&& -->
+
+                <!-- &&&&&&&&&&&&&&&  flex container 2 start &&&&&&&&&&&&&&&&&&&&&& -->
+                    <!-- <div class="grid-item"></div> -->
+                <!-- &&&&&&&&&&&&&&&  flex container 2 end &&&&&&&&&&&&&&&&&&&&&& -->
+                  </div>
+                </div>
+              </li>
+              <!-- &&&&&&&&&&&&&&&&&&&&&&&&  sUB-MENU-2 END OF PRODUCT LIST &&&&&&&&&&&&&&&&&&&&& -->
+
+              <li class="click-me"><a href="#">PRODUCT 2 <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2" id="productOption">
+                  <!-- &&&&&&&&&&&&&&&  grid container  start &&&&&&&&&&&&&&&&&&&&&& -->
+                  <div class="grid-container">
+                    <!-- &&&&&&&&&&&&&&&  flex container 1 start &&&&&&&&&&&&&&&&&&&&&& -->
+                    <div class="grid-item"></div>
+                    <!-- &&&&&&&&&&&&&&&  flex container 1 end &&&&&&&&&&&&&&&&&&&&&& -->
+                <!-- &&&&&&&&&&&&&&&  flex container 2 start &&&&&&&&&&&&&&&&&&&&&& -->
+                    <div class="grid-item">
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">Heading 2</a></h1>
+                          <li><a href="#">link 1 cdlkuj</a></li>
+                          <li><a id="special" href="#">Download</a></li>
+                          <li><a href="#">link 3</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->  
+                    </div>
+                <!-- &&&&&&&&&&&&&&&  flex container 2 end &&&&&&&&&&&&&&&&&&&&&& -->
+
+                <!-- &&&&&&&&&&&&&&&  flex container 2 start &&&&&&&&&&&&&&&&&&&&&& -->
+                    <!-- <div class="grid-item"></div> -->
+                <!-- &&&&&&&&&&&&&&&  flex container 2 end &&&&&&&&&&&&&&&&&&&&&& -->
+
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">PRODUCT 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">PRODUCT 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+            </ul>
+          </div>
+        <!-- &&&&&&&&&&&&&&&&&&&&&&&&  sUB-MENU-1 END OF PRODUCT &&&&&&&&&&&&&&&&&&&&& --> 
+        </li>
+        <li class="menu-link" ><a class="link-of-menu" href="#">EMI NETWORKS <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">ONLINE STORES <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">COMPANIES <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">MORE <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">ENGLISH <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">MY ACCOUNT <i class="fa fa-arrow-circle-down"></i></a></li>
+        <li class="menu-link"><a class="link-of-menu" href="#">CONTACT US <i class="fa fa-arrow-circle-down"></i></a></li>
+        </ul>
+    </div>
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&  left side menu bar end &&&&&&&&&&&&&&&&&&&&& -->
+    
+  </div>
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&  outside nav-bar container &&&&&&&&&&&&&&&&&&&&& -->
+
+
+
+  <!-- &&&&&&&&&&&&&&&&&&&&&&&&  after navbar image start &&&&&&&&&&&&&&&&&&&&& -->
+  <!-- <div id="image-container">
+    <div class="centered">
+      <ul>
+        <li><a href="#">LOANS</a></li>
+        <li><a href="#">CARDS</a></li>
+        <li><a href="#">FIXED DEPOSITE</a></li>
+        <li><a href="#">ONLINE DEMAT AND TRADING ACCOUNT</a></li>
+        <li><a href="#">MUTUAL FUNDS</a></li>
+        <li><a href="#">INSURANCE</a></li>
+        <li><a href="#">POCKET INSURANCE AND SUBCRIPTIONS</a></li>
+      </ul>
+    </div>
+  </div> -->
+  <!-- &&&&&&&&&&&&&&&&&&&&&&&&  after navbar image END &&&&&&&&&&&&&&&&&&&&& -->
+
+    <script src="menu.js"></script>
+</body>
+</html>

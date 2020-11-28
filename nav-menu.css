@@ -2,7 +2,7 @@
 div .nav-menu-container
 {
     /* position: relative; */
-    height: 100%;             /*      height: 100%;    */
+    height: 100%;             /* height: 100%;    */
     width: 85%;
     background-color: rgb(240, 60, 60);
     border-bottom: 1px dotted white;
@@ -12,22 +12,35 @@ div .nav-menu-container ul
 {
     display: flex;
     height: 100%;
-    font-size: x-small;
-    font-weight: 700;
+    /* font-size: 11px; */
+    /* font-weight: 300; */
     list-style: none;
     text-decoration: none;
     /* border: 1px solid orange; */
 }
 
 div .nav-menu-container ul .menu-link{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     height: 100%;
     width: 100%;
     /* border: 1px solid black;   */
 }
 
+div .nav-menu-container ul .menu-link a
+{
+    text-decoration: none;
+    color: white; 
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.fa .fa-arrow-circle-right{
+    margin: 30px;
+    padding: 10px;
+    
+}
 div .nav-menu-container ul .menu-link:hover{
     background-color: white;
 }
@@ -35,16 +48,53 @@ div .nav-menu-container ul .menu-link:hover .link-of-menu{
     color: red;
 }
 
+div .nav-menu-container ul .menu-link:hover .sub-menu-1 .click-me
+{
+    background-color: white;
+}
+div .nav-menu-container ul .menu-link:hover .sub-menu-1 .click-me a{
+    color: red;
+}
+div .nav-menu-container ul .menu-link:hover
+.sub-menu-1 .click-me:hover a{
+    color: blue;
+}
+
+div .nav-menu-container ul .menu-link:hover
+.sub-menu-1 .click-me:hover 
+.grid-container .grid-item .sm-2-block ul h1 a{
+    color: rgba(233, 19, 19, 0.685);
+    text-shadow: 2px 2px 4px #f30d0d5e;
+}
+div .nav-menu-container ul .menu-link:hover
+.sub-menu-1 .click-me:hover 
+.grid-container .grid-item .sm-2-block ul li a{
+    color: rgba(27, 31, 31, 0.527);
+    text-shadow: 1px 1px 1px #0000005e;
+}
+div .nav-menu-container ul .menu-link:hover
+.sub-menu-1 .click-me:hover 
+.grid-container .grid-item .sm-2-block ul li:hover a{
+    color: rgb(0, 47, 255);
+}
+
+
+/* not needed ones we use javascript */
+
+div .grid-container .grid-item .sm-2-block ul h1 a{
+    color: red;
+}
+div .grid-container .grid-item .sm-2-block ul li a{
+    color: black;
+}
+/* not needed ones we use javascript */
+
+
 div .nav-menu-container ul .menu-link:nth-of-type(5){
     margin-right: 15%;
     /* background-color: purple; */
 }
 
-div .nav-menu-container ul .menu-link a
-{
-    text-decoration: none;
-    color: white;   
-}
 
 @media screen and (max-width: 1300px){
     div .nav-menu-container ul .menu-link:nth-of-type(5){

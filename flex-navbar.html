@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,
               700&family=Yanone+Kaffeesatz:wght@200;400;600;700&display=swap" 
               rel="stylesheet"> 
+              <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;1,
+              100;1,300;1,400;1,700&display=swap" rel="stylesheet">  -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300;
+              400;500;600&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="flex-navbar.css">
   <link rel="stylesheet" href="logo.css">
   <link rel="stylesheet" href="nav-menu.css">
   <link rel="stylesheet" href="sub-menu-1.css">
+  <link rel="stylesheet" href="sub-menu-2.css">
   <link rel="stylesheet" href="toggle-button.css">
-  <link rel="stylesheet" href="imageview.css">
+  <!-- <link rel="stylesheet" href="imageview.css"> -->
   <title>Flex navbar</title>
 </head>
 <body>
@@ -31,75 +40,537 @@
         </button>
       <!-- %%%%%%%%%%%%%%%%%%%%%%%%%% toggle button start %%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     </div>
-    <!-- &&&&&&&&&&&&&&&&&&&&&&&&  logo end &&&&&&&&&&&&&&&&&&&&& -->
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&& logo end &&&&&&&&&&&&&&&&&&&&& -->
 
-    <!-- &&&&&&&&&&&&&&&&&&&&&&&&  left side menu bar start &&&&&&&&&&&&&&&&&&&&& -->
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&& left side menu bar start &&&&&&&&&&&&&&&&&&& -->
     <div class="nav-menu-container">
       <ul>
-        <li class="menu-link" onclick="openSubMenu1()"><a class="link-of-menu" href="#">PRODUCTS <i class="fa fa-arrow-circle-down"></i></a>
-          <div class="sub-menu-1" id="product">
+        <li class="menu-link"><a class="link-of-menu" href="#">PRODUCTS <i class="fa fa-arrow-circle-down"></i></a>
+          <!-- &&&&&&&  sUB-MENU-1 START OF PRODUCT &&&&&&&& -->
+          <div class="sub-menu-1">
             <ul>
-              <li class="click-me"><a href="#">PRODUCT 1 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 2 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 3 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 4 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 5 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 6 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 1 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 2 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 3 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 4 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 5 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 6 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 1 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 2 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 3 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 4 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 5 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 6 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 1 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 2 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 3 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 4 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 5 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">PRODUCT 6 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <!-- &&&&&&&  sUB-MENU-2 START OF PRODUCT LIST &&&&&&&& -->
+              <li class="click-me"><a href="#">EMI STORE <i class="fa fa-arrow-circle-right"></i></a>
+                <!-- sub menu 2 inside product list start -->
+                <div class="sub-menu-2 ">
+                  <!-- &&&&&&&&&  grid container  start &&&&&&&&&& -->
+                  <div class="grid-container">
+                    <!-- &&&&&&&&&&&&&&&  flex container 1 start &&&&&&&&&&&&&&&&&&&&&& -->
+                    <div class="grid-item">
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="https://www.google.com">Buy Online</a></h1>
+                          <li><a href="https://www.google.com">Mobiles on EMI</a></li>
+                          <li><a href="https://www.w3schools.com/jsref/jsref_forEach.asp">Laptops on EMI</a></li>
+                          <li><a href="#">LED TVs on EMI</a></li>
+                          <li><a href="#">ACs on EMI</a></li>
+                          <li><a href="#">Refrigerators on EMI</a></li>
+                          <li><a href="#">Washing machines on EMI</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                    <!-- &&&&&&&  flex container 1 end &&&&&&&&&-->
+
+                    <!-- &&&&&& flex container 2 start &&&&&&&&&& -->
+                    <div class="grid-item"></div>
+                    <!-- &&&&&&&  flex container 2 end &&&&&&&&&& -->
+
+                    <!-- &&&&&&&  flex container 2 start &&&&&&&&&& -->
+                    <div class="grid-item"></div>
+                    <!-- &&&&&&& flex container 2 end &&&&&&&&&-->
+                  </div>
+                  <!-- &&&&&&&&& grid container end &&&&&&&&&&&-->
+                </div>
+                <!-- sub menu 2 inside product list end -->
+              </li>
+              <!-- &&&&&&&& sUB-MENU-2 END OF PRODUCT LIST &&&&&&&&&&-->
+
+
+              <li class="click-me"><a href="#">PRE-APPROVED OFFERS <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <div class="grid-item">
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <li><a class="special" href="#">View All Your Offers </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div> <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">PERSONAL LOAN</a></h1>
+                          <li><a class="special" href="#">Get It Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">CREDIT CARD</a></h1>
+                          <li><a class="special" href="#">Get It Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">BUSINESS LOAN</a></h1>
+                          <li><a class="special" href="#">Get It Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">HOME LOAN</a></h1>
+                          <li><a class="special" href="#">Get It Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">DOCTOR LOAN</a></h1>
+                          <li><a class="special" href="#">Get It Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">CHARTED ACCOUNTANT LOAN</a></h1>
+                          <li><a class="special" href="#">Get It Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">RENTAL DEPOSIT LOAN</a></h1>
+                          <li><a class="special" href="#">Get It Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                    </div>
+                    <div class="grid-item">
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">EMI NETWORK</a></h1>
+                          <li><a href="#">Get It Now</a></li>
+                          <li><a href="#">Shopping Assistant</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">LOAN AGAINST CAR</a></h1>
+                          <li><a class="special" href="#">Get It Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end -->
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">CAR LOAN BALANCE TRANSFER</a></h1>
+                          <li><a class="special" href="#">Get It Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end -->  
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">INSTA EMI CARD</a></h1>
+                          <li><a class="special" href="#">Get It Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">Buy Online</a></h1>
+                          <li><a href="#">Mobiles on EMI</a></li>
+                          <li><a href="#">Laptops on EMI</a></li>
+                          <li><a href="#">LED TVs on EMI</a></li>
+                          <li><a href="#">ACs on EMI</a></li>
+                          <li><a href="#">Refrigerators on EMI</a></li>
+                          <li><a href="#">Washing machines on EMI</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me special-link"><a href="https://www.google.com">DOWNLOAD APP <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>three</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me special-link"><a href="#">DOWNLOAD WALLET <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>four</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="dropdown-divider">Buy customer</li>
+
+              <li class="click-me"><a href="#">FOR SALARIED <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <div class="grid-item">
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">PERSONAL LOAN</a></h1>
+                          <li><a class="special" href="#">Apply now</a></li>
+                          <li><a href="#">Personal Loan</a></li>
+                          <li><a href="#">Flexi Loan</a></li>
+                          <li><a href="#">Personal Loan For Wedding</a></li>
+                          <li><a href="#">Personal Loan For Travel</a></li>
+                          <li><a href="#">Personal Loan For Medical Emergency</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">Buy Online</a></h1>
+                          <li><a href="#">Mobiles on EMI</a></li>
+                          <li><a href="#">Laptops on EMI</a></li>
+                          <li><a href="#">LED TVs on EMI</a></li>
+                          <li><a href="#">ACs on EMI</a></li>
+                          <li><a href="#">Refrigerators on EMI</a></li>
+                          <li><a href="#">Washing machines on EMI</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">HOME LOAN</a></h1>
+                            <li><a class="special" href="#">check Pre-approved offer</a></li>
+                            <li><a href="#">Apply Now</a></li>
+                            <li><a href="#">Home Loan</a></li>
+                            <li><a href="#">Pradhan Mantri Awas Yojana</a></li>
+                            <li><a href="#">Home Loan Balance Transfer</a></li>
+                            <li><a href="#">TOp Up Loan</a></li>
+                            <li><a href="#">E-Home Loan</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">RENTAL DEPOSIT LOAN</a></h1>
+                          <li><a class="special" href="#">Apply Now </a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end -->
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">POCKET INSURANCE & SUBCRIPTIONS</a></h1>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                          <h1><a href="#">PROPERTY SEARCHES</a></h1>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>   <!-- block end --> 
+                    </div>
+
+
+
+                    <div class="grid-item">
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">LOAN AGAINST PROPERTY</a></h1>
+                            <li><a class="special" href="#">Apply Now </a></li>
+                            <li><a href="#">Mortgage Loan</a></li>
+                            <li><a href="#">Loan Against Property Eligibility</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Education Loan On Property</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">INSURANCE</a></h1>
+                            <li><a class="special" href="#">Apply Now </a></li>
+                            <li><a href="#">Health Insurance</a></li>
+                            <li><a href="#">Life Insurance</a></li>
+                            <li><a href="#">Motor Insurance</a></li>
+                            <li><a href="#">Home Insurance</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">EMI NETWORK</a></h1>
+                            <li><a href="#">Check Pre Approved Offers</a></li>
+                            <li><a href="#">How To Apply</a></li>
+                            <li><a href="#">EMI Network Card</a></li>
+                            <li><a href="#">Insta EMI Card</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">OTHER SECURED LOANS</a></h1>
+                            <li><a href="#">Gold Loan</a></li>
+                            <li><a href="#">Loan Against Fixed Deposit</a></li>
+                            <li><a href="#">Loan Against Securities</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end --> 
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">PRE-APPROVED OFFERS </a></h1>
+                            <li><a href="#">Insurance Offer</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end --> 
+                    </div>
+                    <div class="grid-item">
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">INVESTMENT</a></h1>
+                            <li><a class="special" href="#">Apply Now </a></li>
+                            <li><a href="#">Fixed Deposit</a></li>
+                            <li><a href="#">Mutual Funds</a></li>
+                            <li><a href="#">Online Trading</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">CREDIT CARDS</a></h1>
+                            <li><a class="special" href="#">Apply Now </a></li>
+                            <li><a href="#">Product Information</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">LOAN AGAINST CAR</a></h1>
+                            <li><a class="special" href="#">Apply Now </a></li>
+                            <li><a href="#">Product Information</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">CAR LOAN BALANCE TRANSFER</a></h1>
+                            <li><a class="special" href="#">Apply Now </a></li>
+                            <li><a href="#">Product Information</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">WALLET</a></h1>
+                            <li><a class="special" href="#">Apply Now </a></li>
+                            <li><a href="#">Insta Credit</a></li>
+                            <li><a href="#">Product Information</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                      <div class="sm-2-block">  <!-- block start -->
+                        <ul>
+                            <h1><a href="#">VALUE ADDED SERVICES</a></h1>
+                            <li><a href="#">Extended Warrenty</a></li>
+                            <li><a href="#">Financial Fitness Report</a></li>
+                            <li><a href="#">Assets Care</a></li>
+                        </ul>
+                        <hr>    <!-- styel is written in sub-menu-2.css file-->
+                      </div>  <!-- block end -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+              <li class="click-me"><a href="#">FOR SME <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Six</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">FOR PROFESSIONALS <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Six</p>
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="dropdown-divider">Buy catogery</li>
+
+
+              <li class="click-me"><a href="#">HEALTH CARE <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Six</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">LOANS <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Six</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">FIXED DEPOSITE & INVESTMENTS <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Six</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">ONLINE TRADING <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Six</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">CREDIT CARD <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Six</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">INSURANCE <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Six</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">POCKET INSURANCE AND SUBCRIPTIONS<i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Six</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">VALUE ADDES SERVICES <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Six</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- &&&&&&&  sUB-MENU-1 END OF PRODUCT &&&&&&&& -->
+       </li>
+
+
+
+
+        <li class="menu-link" ><a class="link-of-menu" href="#">EMI NETWORKS <i class="fa fa-arrow-circle-down"></i></a>
+          <div class="sub-menu-1">
+            <ul>
+              <li class="click-me"><a href="#">EMI NETWORKS 1 <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>seven</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">EMI NETWORKS 3 <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Eight</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">EMI NETWORKS 4 <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Nine</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">EMI NETWORKS 5 <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>Nine</p>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </li>
-        <li class="menu-link" onclick="openSubMenu2()"><a class="link-of-menu" href="#">EMI NETWORKS <i class="fa fa-arrow-circle-down"></i></a>
-          <div class="sub-menu-1" id="emi-network-1">
+
+
+
+
+
+
+        <li class="menu-link"><a class="link-of-menu" href="#">ONLINE STORES <i class="fa fa-arrow-circle-down"></i></a>
+          <div class="sub-menu-1">
             <ul>
-              <li class="click-me"><a href="#">EMI NETWORK 1 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 2 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 3 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 4 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 5 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 6 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 1 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 2 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 3 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 4 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 5 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 6 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 1 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 2 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 3 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 4 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 5 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 6 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 1 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 2 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 3 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 4 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 5 <i class="fa fa-arrow-circle-right"></i></a></li>
-              <li class="click-me"><a href="#">EMI NETWORK 6 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">ONLINE STORES 1 <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>ten</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">ONLINE STORES 3 <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>eleven</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">ONLINE STORES 4 <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>twelve</p>
+                  </div>
+                </div>
+              </li>
+              <li class="click-me"><a href="#">ONLINE STORES 5 <i class="fa fa-arrow-circle-right"></i></a>
+                <div class="sub-menu-2">
+                  <div class="grid-container">
+                    <p>thirteen</p>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
-        
         </li>
-        <li class="menu-link"><a class="link-of-menu" href="#">ONLINE STORES <i class="fa fa-arrow-circle-down"></i></a></li>
-        <li class="menu-link"><a class="link-of-menu" href="#">COMPANIES <i class="fa fa-arrow-circle-down"></i></a></li>
-        <li class="menu-link"><a class="link-of-menu" href="#">MORE <i class="fa fa-arrow-circle-down"></i></a></li>
+
+
+
+
+
+
+        <li class="menu-link"><a class="link-of-menu" href="#">COMPANIES <i class="fa fa-arrow-circle-down"></i></a>
+          <div class="sub-menu-1">
+            <ul>
+              <li class="click-me"><a href="#">COMPANIES 1 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">COMPANIES 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">COMPANIES 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">COMPANIES 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">COMPANIES 3 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">COMPANIES 4 <i class="fa fa-arrow-circle-right"></i></a></li>
+              <li class="click-me"><a href="#">COMPANIES 5 <i class="fa fa-arrow-circle-right"></i></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-link"><a class="link-of-menu" href="#">MORE... <i class="fa fa-arrow-circle-down"></i></a></li>
         <li class="menu-link"><a class="link-of-menu" href="#">ENGLISH <i class="fa fa-arrow-circle-down"></i></a></li>
         <li class="menu-link"><a class="link-of-menu" href="#">MY ACCOUNT <i class="fa fa-arrow-circle-down"></i></a></li>
         <li class="menu-link"><a class="link-of-menu" href="#">CONTACT US <i class="fa fa-arrow-circle-down"></i></a></li>

@@ -1,17 +1,18 @@
 *{
-    /* background-color: rgba(117, 255, 248, 0.336); */
     margin: 0;
     padding: 0;
-    font-family: 'Istok Web', sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 body{
+    /* font-family: 'Big Shoulders Inline Display', cursive; */
+    /* font-family:sans-serif, 'Oswald' ; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
     background-image: url("accountant-accounting-business-948887.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 110vh;
-    /* widt; */
-    /* box-sizing: border-box; */
 }
 #nav-container
 {
@@ -21,3 +22,15 @@ body{
     height: 50px;
     background-color: rgb(240, 60, 60);
 }
+/* .active-menu{
+    display: block;
+} */
+
+/* <div class="sm-2-block">  <!-- block start -->
+    <ul>
+        <h1><a href="#">HEading</a></h1>
+        <li><a class="special" href="#">Link</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <hr>    <!-- styel is written in sub-menu-2.css file-->
+</div>  <!-- block end --> */
