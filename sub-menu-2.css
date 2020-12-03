@@ -71,3 +71,8 @@ hr{
     background: #b3aeaee1;
     border: none;
 }
+@media screen and (max-width: 768px){
+    .sub-menu-2{
+        display: none;
+    }
+}

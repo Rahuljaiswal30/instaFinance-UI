@@ -115,6 +115,7 @@
         width: 100%;
         overflow: auto;
         background-color: rgba(255, 0, 0, 0.63);
+        /* border: 1px solid black; */
        
     }
     .visible-menu-container{
@@ -128,15 +129,19 @@
     }
     .nav-menu-container ul .menu-link{
         height: 50px;
-        border-bottom: 1px dashed white;
+        border-bottom: 1px dashed black;
         flex-direction: column;
         width: 100%;
     }
     .nav-menu-container ul .menu-link .link-of-menu{
         display: flex;
         justify-content: center;
-        letter-spacing: 6px;
+        letter-spacing: 5px;
+
     }
+    /* .nav-menu-container ul .menu-link .link-of-menu{
+        letter-spacing: 5px;
+    } */
 }
 
 
