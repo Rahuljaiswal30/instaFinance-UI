@@ -42,13 +42,10 @@
 .sub-menu-1 ul .special a{
     color: blue;
 }
-/* .sub-menu-1 ul .click-me .fa .fa-arrow-circle-right{
-    margin: 10p
-} */
 .sub-menu-1 ul .click-me:last-child{
     border-bottom: none;
 }
-@media screen and (max-width: 768px)
+/* @media screen and (max-width: 768px)
 {
     .sub-menu-1{
         top: 0px;
@@ -59,4 +56,4 @@
     border-bottom: 1px solid rgb(255, 255, 255);
 
     }
-}
+} */

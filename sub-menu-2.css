@@ -37,7 +37,6 @@ div .grid-container .grid-item .sm-2-block{
     /* border: 3px solid royalblue; */
     height: auto;
     padding: 10px 5px; 
-    /* margin: 50px; */
 }
 
 div .grid-container .grid-item .sm-2-block ul{
@@ -58,6 +57,13 @@ div .grid-container .grid-item .sm-2-block ul li{
 div .grid-container .grid-item .sm-2-block ul li a{
     color: rgba(44, 46, 46, 0.616);
 }
+div .grid-container .grid-item .sm-2-block ul li a em{
+    /* border: 1px solid red; */
+    color: black;
+    font-size: 10px;
+    padding-left: 5px ;
+}
+
 hr{
     width: 75%;
     margin: 15px 0;

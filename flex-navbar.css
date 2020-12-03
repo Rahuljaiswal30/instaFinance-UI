@@ -22,15 +22,3 @@ body{
     height: 50px;
     background-color: rgb(240, 60, 60);
 }
-/* .active-menu{
-    display: block;
-} */
-
-/* <div class="sm-2-block">  <!-- block start -->
-    <ul>
-        <h1><a href="#">HEading</a></h1>
-        <li><a class="special" href="#">Link</a></li>
-        <li><a href="#"></a></li>
-    </ul>
-    <hr>    <!-- styel is written in sub-menu-2.css file-->
-</div>  <!-- block end --> */
