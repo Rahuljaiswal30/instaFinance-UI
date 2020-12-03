@@ -8,6 +8,7 @@ div .nav-logo
     align-items: center;
     border-bottom: 1px dotted white;
     border-right: 1px dotted white;
+    /* z-index: 1; */
     /* font-size: 10px; */
 }
 div .nav-logo a

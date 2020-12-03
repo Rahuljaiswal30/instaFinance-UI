@@ -1,31 +1,26 @@
 
-div .nav-menu-container
+.nav-menu-container
 {
-    /* position: relative; */
-    height: 100%;             /* height: 100%;    */
+    height: 100%;
     width: 85%;
     background-color: rgb(240, 60, 60);
     border-bottom: 1px dotted white;
 }
 
-div .nav-menu-container ul 
+.nav-menu-container ul 
 {
     display: flex;
     height: 100%;
-    /* font-size: 11px; */
-    /* font-weight: 300; */
     list-style: none;
     text-decoration: none;
-    /* border: 1px solid orange; */
 }
 
-div .nav-menu-container ul .menu-link{
+.nav-menu-container ul .menu-link{
     height: 100%;
     width: 100%;
-    /* border: 1px solid black;   */
 }
 
-div .nav-menu-container ul .menu-link a
+.nav-menu-container ul .menu-link a
 {
     text-decoration: none;
     color: white; 
@@ -36,43 +31,43 @@ div .nav-menu-container ul .menu-link a
     align-items: center;
     padding: 0 10px;
 }
-.fa .fa-arrow-circle-right{
-    margin: 30px;
+.nav-menu-container ul .menu-link a .fa .fa-arrow-circle-down{
+    border: 1px solid black;
+    margin-left: 30px;
     padding: 10px;
-    
 }
-div .nav-menu-container ul .menu-link:hover{
+.nav-menu-container ul .menu-link:hover{
     background-color: white;
 }
-div .nav-menu-container ul .menu-link:hover .link-of-menu{
+.nav-menu-container ul .menu-link:hover .link-of-menu{
     color: red;
 }
 
-div .nav-menu-container ul .menu-link:hover .sub-menu-1 .click-me
+.nav-menu-container ul .menu-link:hover .sub-menu-1 .click-me
 {
     background-color: white;
 }
-div .nav-menu-container ul .menu-link:hover .sub-menu-1 .click-me a{
+.nav-menu-container ul .menu-link:hover .sub-menu-1 .click-me a{
     color: red;
 }
-div .nav-menu-container ul .menu-link:hover
+.nav-menu-container ul .menu-link:hover
 .sub-menu-1 .click-me:hover a{
     color: blue;
 }
 
-div .nav-menu-container ul .menu-link:hover
+.nav-menu-container ul .menu-link:hover
 .sub-menu-1 .click-me:hover 
 .grid-container .grid-item .sm-2-block ul h1 a{
     color: rgba(233, 19, 19, 0.685);
     text-shadow: 2px 2px 4px #f30d0d5e;
 }
-div .nav-menu-container ul .menu-link:hover
+.nav-menu-container ul .menu-link:hover
 .sub-menu-1 .click-me:hover 
 .grid-container .grid-item .sm-2-block ul li a{
     color: rgba(27, 31, 31, 0.527);
     text-shadow: 1px 1px 1px #0000005e;
 }
-div .nav-menu-container ul .menu-link:hover
+.nav-menu-container ul .menu-link:hover
 .sub-menu-1 .click-me:hover 
 .grid-container .grid-item .sm-2-block ul li:hover a{
     color: rgb(0, 47, 255);
@@ -81,38 +76,39 @@ div .nav-menu-container ul .menu-link:hover
 
 /* not needed ones we use javascript */
 
-div .grid-container .grid-item .sm-2-block ul h1 a{
+.grid-container .grid-item .sm-2-block ul h1 a{
     color: red;
 }
-div .grid-container .grid-item .sm-2-block ul li a{
+.grid-container .grid-item .sm-2-block ul li a{
     color: black;
 }
 /* not needed ones we use javascript */
 
 
-div .nav-menu-container ul .menu-link:nth-of-type(5){
+.nav-menu-container ul .menu-link:nth-of-type(5){
     margin-right: 15%;
     /* background-color: purple; */
 }
 
 
 @media screen and (max-width: 1300px){
-    div .nav-menu-container ul .menu-link:nth-of-type(5){
+    .nav-menu-container ul .menu-link:nth-of-type(5){
         margin-right: 10%;
         /* background-color: rgb(47, 128, 0); */
     }
 }
 @media screen and (max-width: 1000px){
-    div .nav-menu-container ul .menu-link:nth-of-type(5){
+    .nav-menu-container ul .menu-link:nth-of-type(5){
         margin-right: 0%;
         /* background-color: rgb(0, 19, 128); */
 
     }
 }
-/* @media screen and (max-width: 768px)
+@media screen and (max-width: 768px)
 {
-    div .nav-menu-container
+    .nav-menu-container
     {
+        display: none;
         position: absolute;
         margin-top: 50px;
         height: 600px;
@@ -121,19 +117,26 @@ div .nav-menu-container ul .menu-link:nth-of-type(5){
         background-color: rgba(255, 0, 0, 0.63);
        
     }
-    div .nav-menu-container ul{
-        
-        flex-direction: column;
-        
-    text-align: center;
-    width: 100%;
+    .visible-menu-container{
+        display: block;
     }
-    div .nav-menu-container ul .menu-link{
-        height: 100px;
+
+    .nav-menu-container ul{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .nav-menu-container ul .menu-link{
+        height: 50px;
         border-bottom: 1px dashed white;
         flex-direction: column;
         width: 100%;
     }
-} */
+    .nav-menu-container ul .menu-link .link-of-menu{
+        display: flex;
+        justify-content: center;
+        letter-spacing: 6px;
+    }
+}
 
 
