@@ -64,6 +64,15 @@ div .grid-container .grid-item .sm-2-block ul li a em{
     padding-left: 5px ;
 }
 
+.blink{
+    animation: blinker 1s infinite;
+}
+
+@keyframes blinker{
+    60%{
+        opacity: 0;
+    }
+}
 hr{
     width: 75%;
     margin: 15px 0;
