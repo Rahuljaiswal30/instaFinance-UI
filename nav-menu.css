@@ -130,20 +130,14 @@
     .nav-menu-container ul .menu-link{
         height: 40px;
         /* border: 1px dashed black; */
-        flex-direction: column;
+        /* flex-direction: column; */
         width: 100%;
     }
-    /* .nav-menu-container ul .menu-link{
-        position: fixed;
-    } */
     .nav-menu-container ul .menu-link .link-of-menu{
         justify-content: center;
         letter-spacing: 5px;
         /* border: 5px dotted purple; */
     }
-    /* .nav-menu-container ul .menu-link .link-of-menu{
-        letter-spacing: 5px;
-    } */
 }
 
 

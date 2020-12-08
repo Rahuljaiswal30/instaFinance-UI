@@ -9,8 +9,49 @@ function callthis(){
     console.log("you are inside media query");
 }
 
-// console.log("links.length  :   " + links.length)
+function getfuc2(idx) {
+    function onTop() {
+        for(var i=0; i < menulink.length; i++)
+        {
+            if(i === idx){
+                if(isOn) {
+                    menulink[i].style.position = "static";
+                    if(i<submenu1.length) submenu1[i].style.display = null;
+                    continue;
+                }
+                menulink[i].style.position = "absolute";
+                if(i<submenu1.length) submenu1[i].style.display = "block";
+            }
+            else{
+                if(isOn) {
+                    menulink[i].style.display = "block";
+                    continue;    
+                }
+                menulink[i].style.display = "none";
+            }
+        }
+        isOn = !isOn;
+    }
+    return(onTop);
+}
 
+// console.log("links.length  :   " + links.length)
+var arr2 = [];
+function addSmallListener() {
+    for(var i = 0 ; i < links.length ; i++) {
+        var ref = getfuc2(i);
+        links[i].addEventListener("click", ref);
+        arr2.push(ref);
+    }
+}
+
+function removeSmallListener() {
+    links.forEach(function(links, idx){
+        // console.log(" i am nested inside curifsmall you clicked me ");
+        links.removeEventListener("click", arr2[idx]);
+    });
+    arr2 = [];
+}
 
 function myFunction() {
     console.log("hit");
@@ -20,11 +61,11 @@ function myFunction() {
     var curifbig = window.matchMedia("(min-width: 768px)").matches;
 
     if(curifbig) {
+        console.log("i am curifbig");
         previssmall = false;
         toggleButton.removeEventListener("click", callthis);
-        menulink.forEach(function(menulink){
-            menulink.removeEventListener("click", onTop);
-        });
+        removeSmallListener();
+        addBigListener();
         return;
     }
 
@@ -32,53 +73,16 @@ function myFunction() {
     
     if (curifsmall) {
         toggleButton.addEventListener("click", callthis);
-            menulink.forEach(function(menulink, indexOfMenuLink){
-                function onTop() {
-                // console.log("Indide onTop");
-                console.log("indexofmenulink : -----" + indexOfMenuLink);
-                // console.log("menulink.length " + links.length);
-                    for(var i=0; i < links.length; i++)
-                    {
-                        console.log("value of i  " + i);
-
-                        if(i === indexOfMenuLink){
-                            if(isOn) {
-                                links[i].style.position = "relative";
-                                submenu1[i].style.position = "absolute";
-                                // submenu1[i].style.left = "0px";
-                                continue;
-                            }
-                            links[i].style.position = "absolute";
-                            // console.log("first isOn : " + i);
-                            // console.log(ancorContent[i].innerHTML);
-                        }
-                        else{
-                            if(isOn) {
-                                links[i].style.display = "block";
-                                continue;    
-                            }
-                            // console.log("second IsOn : " + i);
-                            links[i].style.display = "none";
-                            // links[i].style.position = "fixed";
-                        }
-                    }
-                    isOn = !isOn;
-                }
-            menulink.addEventListener("click", onTop);
-            });
-            
-        
+        removeBigListener();
+        addSmallListener();
         previssmall = true;
     }
   } 
-
-
-
 window.onresize = myFunction;
 myFunction();
 
 
-// var menuLink = document.querySelectorAll(".menu-link");
+// var links = document.querySelectorAll(".menu-link");
 // var ancorContent = document.querySelectorAll(".menu-link > a");
 // var toggleButton = document.getElementById("icon-burger");
 // var navMenuContainer = document.querySelector(".nav-menu-container");

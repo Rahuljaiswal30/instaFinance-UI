@@ -1,4 +1,3 @@
-
 body.addEventListener("click", function(){
     // console.log("body clicked");
     submenu1.forEach(function(name){
@@ -6,35 +5,61 @@ body.addEventListener("click", function(){
     })
 })
 
-//THIS IS MAIN MENU LINK 
+//THIS IS MAIN MENU LINK
 
-menulink.forEach(function(menulink, indexofmenulink){
-    menulink.addEventListener("click", function(e){
+var arr = []
+function getfuc(tempIdx) {
+    function displaySubMenu1(e) {
         e.stopPropagation();
-        // console.log("Menu linked listner called");
-        displaySubMenu1(indexofmenulink);
-    });
-});
-
-var displaySubMenu1 = function(indexofmenulink){
-    console.log("indexofmenulink - " + indexofmenulink)
-    for(var i=0; i < menulink.length && i < submenu1.length; i++){
-        if(i === indexofmenulink){
-            console.log(i);
-            submenu1[i].classList.toggle("active-menu-1");
-        }else{
-            submenu1[i].classList.remove("active-menu-1");
+        console.log("from the big - " + tempIdx);
+        for(var i=0; i < menulink.length && i < submenu1.length; i++){
+            if(i === tempIdx){
+                console.log(i);
+                submenu1[i].classList.toggle("active-menu-1");
+            }else{
+                submenu1[i].classList.remove("active-menu-1");
+            }
         }
     }
+    return(displaySubMenu1);
 }
+
+// var tempIdx = 0;
+// function displaySubMenu1(e) {
+//     e.stopPropagation();
+//     console.log("from the big - " + tempIdx);
+//     for(var i=0; i < menulink.length && i < submenu1.length; i++){
+//         if(i === tempIdx){
+//             console.log(i);
+//             submenu1[i].classList.toggle("active-menu-1");
+//         }else{
+//             submenu1[i].classList.remove("active-menu-1");
+//         }
+//     }
+// }
+
+function addBigListener() {
+    for(var i = 0 ; i < menulink.length ; i++) {
+        var ref = getfuc(i);
+        menulink[i].addEventListener("click", ref);
+        arr.push(ref);
+    }
+}
+
+function removeBigListener() {
+    menulink.forEach(function(menulink, idx){
+        menulink.removeEventListener("click", arr[idx]);
+    });
+    arr = []
+}
+
+
 
 // this is sub menu 1 end
 
 clickme.forEach(function(clickme, index){
     clickme.addEventListener("mouseover", function(e){
         e.stopPropagation();
-        // console.log("Click me got called");
-        // alert(index);
         displayBlock(index);
     });
     clickme.addEventListener("click", function(e){
@@ -69,3 +94,23 @@ for(var j=0; j<speciallink.length; j++){
     speciallink[j].style.color = "blue";
 }
 
+// var previssmall = false;
+
+
+
+// function myFunc(){
+//     var curifsmall = window.matchMedia("(max-width: 768px)").matches;
+//     var curifbig = window.matchMedia("(min-width: 768px)").matches;
+//     if(curifbig){
+
+//     }
+
+//     if(curifsmall && previssmall) return;
+
+//     if(curifsmall){
+
+//     }
+// }
+
+// window.onresize = myFunc;
+// myFunc();
