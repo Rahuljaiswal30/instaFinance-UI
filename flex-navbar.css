@@ -4,21 +4,71 @@
     box-sizing: border-box; 
 }
 body{
-    /* font-family: 'Big Shoulders Inline Display', cursive; */
-    /* font-family:sans-serif, 'Oswald' ; */
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 10px;
     font-weight: 600;
-    background-image: url("accountant-accounting-business-948887.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url("accountant-accounting-business-948887.jpg"); */
+    
     height: 110vh;
 }
 #nav-container
 {
+    font-family: 'Montserrat', sans-serif;
+
     position: fixed;
     display: flex;
     width: 100%;
     height: 50px;
     background-color: rgb(240, 60, 60);
 }
+
+.img-container{
+    font-family: "New Century Schoolbook";
+
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: relative;
+    top: 50px;
+    opacity: 0.8;
+}
+
+.above-center{
+    color:  red ;
+    z-index: 1;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-57%, -50%);
+    font-weight: 800;
+    font-size: 1.5rem;
+    animation: instafin 5s infinite;
+}
+@keyframes instafin{
+    0%   {  color: blue;}
+    50%  {  color: red;}
+    100% {  color: blue;}
+}
+.centered{
+    font-family: Courier;
+    color:  rgb(240, 60, 60)    ;
+    z-index: 1;
+    opacity: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+    animation: movefront 5s infinite;
+}
+@keyframes movefront{
+    0%   {font-size: 1.0rem; opacity: 0; color: blue;}
+    50%  {font-size: 1.7rem; opacity: 1; color: red;}
+    100% {font-size: 1.0rem; opacity: 0; color: blue;}
+}
+
+
+
+
+
